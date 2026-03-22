@@ -1,4 +1,4 @@
-package cursojava.herança2;
+package cursojava.herança.modificador.protected1;
 
 public class Aluno extends Pessoa {
 	
@@ -7,6 +7,13 @@ public class Aluno extends Pessoa {
 	private String curso;
 	private double[] notas;
 	
+	
+	public void verificarAcesso() {
+		
+		this.nomeVisibilidade = "testando";
+		super.nomeVisibilidade = "testando2";
+		
+	}
 	
 	public Aluno() {
 		super();

@@ -1,4 +1,4 @@
-package cursojava.herança2;
+package cursojava.herança.polimorfismo.sobrecarga.metodos;
 
 public class Aluno extends Pessoa {
 	
@@ -7,6 +7,13 @@ public class Aluno extends Pessoa {
 	private String curso;
 	private double[] notas;
 	
+	
+	public void verificarAcesso() {
+		
+		this.nomeVisibilidade = "testando";
+		super.nomeVisibilidade = "testando2";
+		
+	}
 	
 	public Aluno() {
 		super();
@@ -43,6 +50,14 @@ public class Aluno extends Pessoa {
 	
 	public boolean verificarAprovado () {
 		return true;
+	}
+	
+	public String obterEtiquetaEndereco () {
+		
+		String s = "Endereço do Aluno: ";
+		s += super.getEndereco();
+		
+		return s;
 	}
 
 }
