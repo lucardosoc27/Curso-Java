@@ -1,5 +1,6 @@
-package cursojava.palavrachave.final_.constante;
+package orientacao.objeto.classe.object1;
 
+import java.util.Arrays;
 
 public class Aluno {
 	
@@ -11,8 +12,8 @@ public class Aluno {
 	
 	public void verificarAcesso() {
 		
-		//this.nomeVisibilidade = "testando";
-		//super.nomeVisibilidade = "testando2";
+		/*this.nomeVisibilidade = "testando";
+		super.nomeVisibilidade = "testando2";*/
 		
 	}
 	
@@ -61,9 +62,24 @@ public class Aluno {
 		return s;
 	}
 	
+	//Override
 	public void imprimirEtiquetaEndereco () {
 		
 		System.out.println(this.obterEtiquetaEndereco());
 	}
-
+		
+	public String toString () {
+		return "Aluno [curso = " + curso + ", notas = " + Arrays.toString(notas)
+		+ " ";
+	}
+	
+	/*public String toString () {
+		String s = curso + "\n";
+		
+		for (double nota : notas) {
+			s+= nota + " ";
+		}
+		
+		return s;
+	}*/
 }
