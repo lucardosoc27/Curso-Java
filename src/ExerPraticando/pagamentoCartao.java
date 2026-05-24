@@ -2,6 +2,7 @@ package ExerPraticando;
 
 public class pagamentoCartao implements Pagamento {
 	
+	@Override
 	public void processarPagamento (ContaBancaria conta, double valor) {
 		
 		if(conta.sacar(valor)) {

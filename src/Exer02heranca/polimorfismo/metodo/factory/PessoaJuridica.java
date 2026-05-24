@@ -18,7 +18,7 @@ public class PessoaJuridica extends Contribuinte {
 	}
 	
 	public String toString() {
-		String s = "Pessoa Juridica";
+		String s = "Pessoa Juridica[";
 		super.toString();
 		s += "Cnpj: " + cnpj;
 		s += "Imposto a ser pago: " + calcularImpostos();
