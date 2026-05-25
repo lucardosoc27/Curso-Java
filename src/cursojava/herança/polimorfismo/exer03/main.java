@@ -40,8 +40,5 @@ public class main {
 			System.out.println(a.toString());
 			System.out.println("-----------------------");
 		}
-		
-		
-
 	}
 }
